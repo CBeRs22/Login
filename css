@@ -2,12 +2,21 @@
     box-sizing: content-box;
 }
 
+/* Body */
+
+body {
+    background-image: url(banner.png);
+    
+    background-size: cover;
+    background-position-y: 500%;
+}
+
 #contenedor {
     display: flex;
     align-items: center;
     justify-content: left;
     margin: 0;
-    padding: 60px 75px;
+    padding: 10px 70px;
     min-width: 100vw;
     min-height: 100vh;
     width: 100%;
@@ -21,7 +30,7 @@
 
 #login {
     width: 100%;
-    padding: 50px 30px;
+    padding: 30px 50px;
     background-color: #ffffff4b;
     
     -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
@@ -35,7 +44,17 @@
     box-sizing: border-box;
 }
 
+#logo {
+    position: relative;
+    left: 27%;
+    top: 100%;
+    width: 60%;
+    height: 60%;
+    box-sizing: border-box;
+}
+
 h2 {
+    font-family:"Dancing Script", strong;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -45,7 +64,7 @@ h2 {
 }
 
 .cuadro {
-    width: 100%;
+    width: 90%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
@@ -64,10 +83,11 @@ h2 {
 }
 
 .cuadro .form-control {
+    right: 24%;
     position: relative;
     box-sizing: border-box;
     height: auto;
-    padding: 10px;
+    padding: 8px;
     font-size: 16px;
 }
   
@@ -102,10 +122,10 @@ button[type="submit"]:hover {
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 150%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc27;
     border-radius: 5px;
 }
 
@@ -143,7 +163,11 @@ input[type="password"] {
     color: #000000;
 }
 
-:root{
+/* Footer */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Sofia+Sans+Condensed:ital,wght@0,400;0,500;1,400&display=swap");
+
+:root {
     --var-color-primario:#1D4E89 ;
     --var-color-secundario: #00b2ca2f;
     --var-color-terciario:#3FC1C0 ;
@@ -151,9 +175,98 @@ input[type="password"] {
     --var-color-resaltado: ;
     --var-color-tranparente: ;
     --var-color-body: ;
-    font-family: 'Sofia Sans Condensed','roboto', sans-serif;
+    font-family: "Sofia Sans Condensed","roboto", sans-serif;
 }
 
 .text-mochileando{
-  font-family:'Dancing Script', strong;
+  font-family:"Dancing Script", strong;
+}
+
+.Footer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "left_f center_f rigth_f"
+      "left_f center_f rigth_f"
+      "left_f center_f rigth_f";
+    grid-area: Footer;
+    background-color: var(--var-color-primario);
+    color: white;
+}
+
+.left_f { grid-area: left_f;
+    border-right: solid 1px #bbb;
+    padding: 0.5em 0.1em 0.5em 1em;
+    box-sizing: border-box;
+}
+  
+.center_f { grid-area: center_f;
+    border-right: solid 1px #bbb;
+    padding: 0.5em 0.1em 0.5em 1em;
+    box-sizing: border-box;
+}
+  
+.rigth_f { grid-area: rigth_f;
+    padding: 0.5em 0.1em 0.5em 1em;
+}
+ 
+.text-presentation{
+      margin: 2px;
+}
+
+.ta-l {
+    text-align: left;
+}
+  
+.footer-col a {
+    display: block;
+    margin: 0.3em 0;
+}
+
+.footer-logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.icons-styles{
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+.our-site{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+@media screen and (max-width:480px){
+    .Footer {  display: grid;
+      grid-template-columns:  1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "center_f "
+        "center_f"
+        "center_f";
+      grid-area: Footer;
+      background-color: var(--var-color-primario);
+    }
+    
+    .left_f { grid-area: left_f;
+              display: none;  
+    }
+    
+    .center_f { grid-area: center_f;
+  
+    }
+    
+    .rigth_f { grid-area: rigth_f;
+              display: none;
+    }
 }
