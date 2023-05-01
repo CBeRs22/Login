@@ -6,7 +6,6 @@
 
 body {
     background-image: url(banner.png);
-    
     background-size: cover;
     background-position-y: 500%;
 }
@@ -103,6 +102,10 @@ label {
 
 .cuadro .checkbox {
     font-weight: 400;
+}
+
+input [type="checkbox"]{
+    color:#0069d9
 }
 
 button[type="submit"] {
