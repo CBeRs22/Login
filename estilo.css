@@ -1,0 +1,141 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+/* Body */
+
+body {
+    background-image: url(banner.png);
+    background-repeat: no-repeat;   
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    padding: 10px 78px;
+    min-width: 100vw;
+    min-height: 100vh;  
+}
+
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+
+#login {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #ffffff4b;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#logo {
+    position: relative;
+    left: 28%;
+    top: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family:"Courier New", Monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome {
+    color: #222222
+}
+
+.cuadro {
+    width: 90%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.cuadro input[type="email"] {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.cuadro input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cuadro .form-control {
+    right: 24%;
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+}
+  
+.cuadro .form-control:focus {
+    z-index: 2;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 150%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc27;
+    border-radius: 5px;
+}
+
+label {
+    color: #222222;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cuadro .checkbox {
+    font-weight: 400;
+    text-align: center;
+}
+
+button[type="submit"] {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1D4E89;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #000000;
+}
